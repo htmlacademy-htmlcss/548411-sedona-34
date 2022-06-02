@@ -29,6 +29,15 @@ body {
   margin: 0;
 }
 
+.body-container {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -55,6 +64,7 @@ img {
 }
 
 .navigation {
+  display: flex;
   position: relative;
   width: 1060px;
   align-items: center;
@@ -62,6 +72,9 @@ img {
 }
 
 .navigation-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -83,19 +96,20 @@ img {
 
 .navigation-user {
   min-height: 70px;
-
+  display: flex;
   align-items: center;
   margin-left: auto;
   min-width: 264px;
 }
 
 .navigation-user-link {
-
+  display: inline-block;
   position: relative;
   text-decoration: none;
 }
 
 .nav-link-button {
+  display: inline-block;
   padding: 8px 15px;
   min-width: 160px;
   min-height: 37px;
@@ -113,6 +127,12 @@ img {
   margin-left: 21px;
 }
 
+.main-container {
+  position: relative;
+  top: -5px;
+  flex-grow: 1;
+}
+
 .welcome-sedona {
   min-width: 100%;
   min-height: 485px;
@@ -128,6 +148,9 @@ img {
 }
 
 .slogan-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   margin: 0 auto;
   width: 720px;
@@ -163,6 +186,8 @@ img {
 }
 
 .advantages-item {
+  display: flex;
+  flex-direction: column;
   width: 400px;
   min-height: 384px;
   align-items: center;
@@ -253,7 +278,7 @@ img {
 
 
 .hotel-search {
-
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
@@ -279,6 +304,7 @@ img {
 }
 
 .button-hotel-search {
+  display: inline-block;
   padding: 12px 10px;
   min-width: 575px;
   min-height: 60px;
@@ -294,6 +320,8 @@ img {
 }
 
 .mailing {
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   min-height: 411px;
@@ -324,6 +352,7 @@ img {
 }
 
 .mailing-form {
+  display: flex;
   justify-content: center;
   margin-bottom: 94px;
 }
@@ -356,6 +385,9 @@ img {
 }
 
 .footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   width: 1069px;
   height: 101px;
@@ -371,6 +403,7 @@ img {
 }
 
 .footer-social-link {
+  display: inline-block;
   padding: 5px 14px;
   color: #83b3d3;
 }
@@ -389,6 +422,7 @@ img {
 }
 
 .htmlacademy-link {
+  display: inline-block;
   color: #000000;
   margin-right: 5px;
 }
@@ -399,7 +433,7 @@ img {
 }
 
 .catalog-hotel-filter {
-
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -411,7 +445,7 @@ img {
 }
 
 .inner-header {
-
+  display: flex;
   flex-direction: column;
   justify-content: start;
   margin-left: 71px;
@@ -428,7 +462,7 @@ img {
 
 .breadcrumbs {
   position: relative;
-
+  display: flex;
   justify-content: space-between;
   width: 113px;
   font-size: 16px;
@@ -451,7 +485,7 @@ img {
 }
 
 .catalog-filter {
-
+  display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   margin: 0;
@@ -504,6 +538,7 @@ img {
 }
 
 .price-range {
+  display: inline-block;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.3;
@@ -511,6 +546,7 @@ img {
 }
 
 .range-value-box {
+  display: flex;
   margin-bottom: 28px;
 }
 
@@ -616,8 +652,10 @@ img {
 }
 
 .button-filter-container {
-  font-family: "PT Sans", "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
+  font-family: "PT Sans", "Arial", sans-serif;
   align-items: center;
   margin-top: 61px;
   margin-left: 79px;
@@ -656,6 +694,8 @@ img {
 }
 
 .sorting-hotels-container {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: start;
   align-items: center;
   width: 1057px;
@@ -688,6 +728,11 @@ img {
   margin-right: 80px;
   border-radius: 4px;
   padding-left: 16px;
+}
+
+.sorting-button {
+  display: flex;
+  justify-content: center;
 }
 
 .button-catalog-view {
@@ -786,6 +831,9 @@ img {
 }
 
 .hotels-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 160px;
   height: 37px;
   font-size: 16px;
@@ -822,12 +870,15 @@ img {
 }
 
 .pagination {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   width: 1056px;
   margin: 0 auto;
 }
 
 .pagination-list {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -844,6 +895,7 @@ img {
 }
 
 .pagination-link {
+  display: block;
   min-width: 55px;
   min-height: 55px;
   padding: 15px;
