@@ -179,6 +179,8 @@ img {
 }
 
 .advantages-list {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
   width: 1200px;
   list-style: none;
   padding: 0;
@@ -195,6 +197,7 @@ img {
 }
 
 .advantages-item-photo {
+  grid-column: span 2;
   width: 800px;
 }
 
@@ -758,6 +761,8 @@ img {
 }
 
 .hotels-list {
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
   font-size: 18px;
   line-height: 1.27;
   color: #333333;
@@ -768,12 +773,23 @@ img {
 }
 
 .hotels-card {
+  display: grid;
+  grid-template-columns: auto auto auto;
   width: 340px;
   align-items: center;
   padding: 20px;
 }
 
+.card-link-photo {
+  grid-column: 1/-1;
+}
+
+.catalog-hotels-photo {
+  grid-column: span 3;
+}
+
 .card-link-title {
+  grid-column: 1/-1;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.3;
@@ -789,14 +805,18 @@ img {
 }
 
 .house-group {
+  grid-column: 1/2;
   margin-bottom: 6px;
 }
 
 .price-hotels {
+  grid-column: 3/4;
   margin-bottom: 6px;
 }
 
 .hotels-card-button {
+  grid-column: 1/2;
+  display: inline-block;
   width: 133.01px;
   padding: 8px 5px;
   font-weight: 700;
@@ -811,6 +831,7 @@ img {
 }
 
 .button-favourites-hotels {
+  grid-column: 3/4;
   width: 140.94px;
   min-height: 37px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -830,7 +851,12 @@ img {
   cursor: pointer;
 }
 
+.stars {
+  grid-column: 1/2;
+}
+
 .hotels-rating {
+  grid-column: 2/4;
   display: flex;
   justify-content: center;
   align-items: center;
