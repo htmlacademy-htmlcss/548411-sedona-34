@@ -181,6 +181,86 @@
           <span class="visually-hidden">Логотип htmlacademy.</span>
         </a>
       </footer>
+
+    <!--Для появления модального окна нужно section добавить класс modal-page-active -->
+    <section class="modal-page">
+      <div class="modal-box">
+        <div class="modal-container">
+          <div class="modal-header">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <button class="button close-modal" aria-label="Закрыть окно.">
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z" fill="black"/>
+              </svg>
+            </button>
+          </div>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="arrival-date" for="arrival-date">Дата Заезда:</label>
+              <div class="input-box">
+                <input class="input-arrival-date" id="arrival-date" type="text" value="" placeholder="Укажите дату">
+                <button class="button input-calendar-arrival" aria-label="Открыть календарь для выбора даты." type="button"></button>
+                <!--Для появления предупреждения необходимо span класс error-notification-active-->
+                <span class="error-notification">Мы не можем отправить вас в прошлое.</span>
+              </div>
+            <label class="departure-date" for="departure-date">Дата Выезда:</label>
+              <div class="input-box">
+                <input class="input-departure-date" id="departure-date" type="text" placeholder="Укажите дату">
+                <button class="button input-calendar-departure" aria-label="Открыть календарь для выбора даты." type="button"></button>
+                <!--Для появления положительного уведомления необходимо span добавить класс positive-notification-active-->
+                <span class="positive-notification">На эти даты есть свободные номера. Пока есть.</span>
+              </div>
+            <label class="adults-label" for="adults-number">Взрослые:</label>
+              <div class="adults-box">
+                <button class="button minus-button" type="button" aria-label="Уменьшить количество взрослых.">
+                  <svg class="minus-svg" width="13" height="1" viewBox="0 0 13 1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 1L13 1V0L0 0Z" fill="currentColor"/>
+                  </svg>
+                </button>
+                <input class="adults-number" id="adults-number" type="number" value="2" step="1" min="1" max="4">
+                <button class="button plus-button" type="button" aria-label="Увеличить количество взрослых.">
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                      <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="currentColor"/>
+                    </g>
+                 </svg>
+                </button>
+              </div>
+            <label class="children-label" for="children-number">Дети:
+              <button class="button info-children" id="children-number" type="button">
+                <svg width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_33716_651)">
+                    <path d="M0 9H1L1 3H0L0 9Z" fill="white"/>
+                    <path d="M1 0H0V1H1V0Z" fill="white"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_33716_651">
+                      <rect width="1" height="9" fill="currentColor"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              <span class="notification-children">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети<br>до 6 лет размещаются бесплатно.</span>
+              </button>
+            </label>
+            <div class="children-box">
+              <button class="button minus-button" type="button">
+                <svg width="13" height="1" viewBox="0 0 13 1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0L0 1L13 1V0L0 0Z" fill="currentColor"/>
+                </svg>
+              </button>
+              <input class="children-number" type="number" value="1" step="1" min="0" max="4">
+              <button class="button plus-button" type="button">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="currentColor"/>
+                  </g>
+                </svg>
+              </button>
+            </div>
+          <button class="button button-modal-form" type="submit">Найти</button>
+        </form>
+      </div>
+      </div>
+    </section>
     </div>
   </body>
 </html>
