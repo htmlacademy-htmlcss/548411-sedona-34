@@ -354,7 +354,7 @@ img {
   text-transform: uppercase;
   margin: 0;
   margin-top: 184px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .advantages-inner-description {
@@ -668,8 +668,8 @@ li.footer-social-item:first-child {
   line-height: 1.2;
   list-style: none;
   margin: 0;
+  margin-top: 15px;
   padding: 0;
-  margin-top: -6px;
 }
 
 .breadcrumbs li:first-of-type:before {
@@ -713,6 +713,7 @@ li.footer-social-item:first-child {
   justify-content: flex-start;
   align-items: flex-start;
   margin: 0;
+  margin-top: -6px;
 }
 
 .catalog-filter-item {
@@ -820,7 +821,7 @@ li.footer-social-item:first-child {
   min-width: 287px;
   border: none;
   padding: 0;
-  margin-left: 122px;
+  margin-left: 135px;
 }
 
 .price-range {
@@ -983,7 +984,7 @@ li.footer-social-item:first-child {
   justify-content: flex-start;
   align-items: center;
   margin-top: 61px;
-  margin-left: 79px;
+  margin-left: 70px;
 }
 
 .catalog-filter-submit {
@@ -1021,7 +1022,7 @@ li.footer-social-item:first-child {
   min-height: 23px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.3;
   text-align: center;
   color: #ffffff;
@@ -1065,6 +1066,7 @@ li.footer-social-item:first-child {
   line-height: 1.3;
   text-transform: uppercase;
   color: #000000;
+  margin-top: 39px;
   margin-right: 192px;
 }
 
@@ -1110,6 +1112,7 @@ li.footer-social-item:first-child {
   border-radius: 4px;
   border: 2px solid #e6e6e6;
   background-color: transparent;
+  margin-top: 12px;
   margin-right: 8px;
 }
 
@@ -1312,6 +1315,7 @@ li.footer-social-item:first-child {
 .divider-container {
   width: 1055px;
   margin: 0 auto;
+  margin-top: 50px;
   margin-bottom: 30px;
   border-top: 1px solid #e6e6e6;
 }
@@ -1358,8 +1362,8 @@ li.footer-social-item:first-child {
 
 .pagination-link {
   display: block;
-  min-width: 55px;
-  min-height: 55px;
+  min-width: 60px;
+  min-height: 60px;
   padding: 15px;
   font-weight: 700;
   font-size: 20px;
@@ -1424,8 +1428,7 @@ li.footer-social-item:first-child {
 }
 
 .mailing-title-catalog {
-  margin-top: 74px;
-  margin-bottom: 46px;
+  margin-top: 118px;
   color: #000000;
 }
 
