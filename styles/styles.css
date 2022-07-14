@@ -20,8 +20,8 @@ html {
 }
 
 *,
-::before,
-::after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -46,7 +46,7 @@ body {
 
 img {
   max-width: 100%;
-  display: block;
+  object-fit: contain;
   height: auto;
   overflow: hidden;
 }
@@ -227,6 +227,7 @@ img {
 }
 
 .welcome-cedona-logo {
+  display: block;
   margin: 0 auto;
   padding-top: 51px;
   padding-bottom: 82px;
@@ -804,7 +805,7 @@ li.footer-social-item:first-child {
 
 /* focesed */
 
-.control-input:disabled:hover + .radio {
+.control-input:hover + .radio {
   outline: 3px solid #83b3d3;
 }
 
