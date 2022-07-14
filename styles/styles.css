@@ -47,8 +47,6 @@ body {
 img {
   max-width: 100%;
   object-fit: contain;
-  height: auto;
-  overflow: hidden;
 }
 
 .button {
@@ -102,6 +100,12 @@ img {
   text-align: center;
   text-decoration: none;
   padding: 17px 17px;
+}
+
+.page-header-logo {
+  display: block;
+  height: auto;
+  overflow: hidden;
 }
 
 .navigation-link:hover {
@@ -227,10 +231,12 @@ img {
 }
 
 .welcome-cedona-logo {
-  display: block;
   margin: 0 auto;
   padding-top: 51px;
   padding-bottom: 82px;
+  display: block;
+  height: auto;
+  overflow: hidden;
 }
 
 .slogan-box {
