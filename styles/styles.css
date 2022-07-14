@@ -619,7 +619,7 @@ li.footer-social-item:first-child {
 }
 
 .htmlacademy-icon:active {
-  color: rgb(117, 98, 87);
+  color: rgb(117, 97, 87, 0.3);
 }
 
 /* catalog */
