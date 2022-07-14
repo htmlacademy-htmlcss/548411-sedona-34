@@ -19,12 +19,6 @@ html {
   box-sizing: border-box;
 }
 
-*,
-::before,
-::after {
-  box-sizing: inherit;
-}
-
 body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
@@ -48,6 +42,7 @@ img {
   max-width: 100%;
   display: block;
   height: auto;
+  object-fit: contain;
   overflow: hidden;
 }
 
@@ -130,6 +125,7 @@ img {
 
 .number-favoutites:active::before {
   color: rgba(255, 255, 255, 0.3);
+  box-sizing: inherit;
 }
 
 .nav-link-button:hover {
@@ -171,6 +167,7 @@ img {
   min-height: 20px;
   background-color: #7db54f;
   border-radius: 50px;
+  box-sizing: inherit;
 }
 
 .nav-link-button {
@@ -199,6 +196,7 @@ img {
   width: 68px;
   height: 2px;
   background-color: rgba(117, 98, 87, 1);
+  box-sizing: inherit;
 }
 
 .navigation-link-current::before {
@@ -208,6 +206,7 @@ img {
   width: 93px;
   height: 2px;
   background-color: rgba(117, 98, 87, 1);
+  box-sizing: inherit;
 }
 
 /* main index*/
@@ -1785,6 +1784,7 @@ li.footer-social-item:first-child {
   height: 9px;
   border: 20px solid transparent;
   border-bottom: 20px solid #333333;
+  box-sizing: inherit;
 }
 
 .children-box {
