@@ -40,7 +40,10 @@ body {
 
 img {
   max-width: 100%;
+  display: block;
+  height: auto;
   object-fit: contain;
+  overflow: hidden;
 }
 
 .button {
